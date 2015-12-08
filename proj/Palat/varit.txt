@@ -1,0 +1,6 @@
+Harmaa (vaalea)		#f1f1f1
+Harmaa			#dfdfdf
+Harmaa (tumma)		#cccccc
+
+Oranssi			#ffbd2b
+Oranssi (tumma)		#e77918

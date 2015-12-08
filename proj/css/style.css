@@ -1,0 +1,320 @@
+/*
+ ********************
+ * = pelaajataulu.php
+ ********************
+*/
+
+	
+#banner{background-image:url('../Palat/banneri.jpg');}
+#banner2{background-image:url('../Palat/banneri2.jpg');cursor:auto;}
+
+canvas
+{
+	cursor:pointer;
+	width:100%;
+	max-width:1282px;
+	height:145px;
+	max-height:145px;
+	margin:0px;
+	padding:0px
+}
+ul li{list-style:none}
+ul{margin:0px; padding:0px;}
+body{margin:auto; width:100%; max-width:1282px;}
+.row{width:100%; max-width:1282px;}
+#pelaajataulu{width:100%; height:100%;}
+#index{width:100%;height:100%;}
+
+/*
+ ********************
+ * =HAKUPALKKI
+ ********************
+*/
+
+#versionumero{float:left;}
+
+#index .hakupalkki_h2{width:25%; background-color:rgb(204, 204, 204);}
+.hakupainike_index{background-color:rgb(241, 241, 241); float:left; height:100%; width:15%;}
+.hakupainike_index{height:100%;}
+
+
+.hakupalkki{background-color:rgb(241, 241, 241);}
+.nuoli{float:left; height:100%;}
+.hakupalkki{height: 10%; width:100%; box-shadow:8px 5px 3px #888888; }
+.hakupalkki_h2{float:left; color:rgb(231, 121, 24); width:15%; max-width:15%; height:100%; background-color:rgb(204, 204, 204);}
+.hakupalkki h2{padding: 0% 0% 0% 0%;  margin: 15% 0% 0% 15%; }
+.hakupalkki table{float:left; width:60%; height:100%; background-color:rgb(223, 223, 223); }
+.hakupalkki select{margin:0% 0% 0% 0%; }
+.hakupalkki .ShortInput{width:50px; }
+.hakupalkki td{font-size:125%; }
+.hakupalkki tr td{color:rgb(231, 138, 69); }
+.hakupalkki tr, .hakupalkki td, .hakupalkki table{border:0}
+
+.hakupainike input {
+	background : url("../Palat/haku1.jpg") no-repeat center center;
+	width: 106px;
+	height: 68px;
+	border: none;
+	color: transparent;
+	font-size: 0;
+	cursor:pointer;
+	height:100%;
+}
+.hakupainike{background-color:rgb(241, 241, 241); float:left; height:100%; width:10%;}
+
+/*
+ ********************
+ * =LISTAUS
+ ********************
+*/
+
+.listaus{height:100%; width:25%; float:left; color:rgb(231, 138, 69);}
+.listaus ul li{padding:5px 0px 5px 10px;}
+.listaus ul li:nth-child(odd){background-color:rgb(224, 224, 224);}
+.listaus ul li:nth-child(even){background-color:rgb(255, 255, 255);}
+.listaus ul li:hover{background-color:rgb(255, 189, 43);}
+.listaus ul li.valittuPelaaja{background-color:rgb(255, 189, 43);}
+
+/*
+ ********************
+ * =PELAAJAN_TIEDOT-TESTIT
+ ********************
+*/
+
+#pelaajan_tiedot-testit{width:75%; float:right; margin-right:-1.5%;}
+#pelaajan_tiedot
+{
+	border:0px 0px 5px 0px rgb(223, 223, 223);
+	border-top: none;
+	border-radius:10px;
+	height:17%;
+	width:98%;
+	background-color:rgb(223, 223, 223);
+}
+#pelaajan_tiedot h4
+{
+	color:rgb(238, 136, 28);
+	height:25%;
+	padding:1% 0% 0% 0%;
+	text-align:center;
+	margin-top:2%;
+	margin-bottom:0;
+	background-color:rgb(204, 204, 204); 
+	border-top:5px solid rgb(204, 204, 204);
+	border-radius:10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size:20px;
+}
+#pelaajan_tiedot p{display:inline; padding:0% 0% 0% 15%; }
+#pelaajan_tiedot td{width:10%;}
+#pelaajan_tiedot .muokkaaTietoja{float:right; margin-right:5%;}
+#pelaajan_tiedot table{padding: 0% 0% 0% 3%; float:left; }
+#pelaajan_tiedot tr:first-child{color:rgb(238, 136, 28);}
+#pelaajan_tiedot tr, #pelaajan_tiedot td, #pelaajan_tiedot table{border:0}
+#pelaajan_testit{background-color:rgb(204, 204, 204);}
+#pelaajan_testit
+{
+	overflow:hidden; 
+	margin-top:10px;
+	width:98%;
+	height:83%;
+	border-radius:10px;
+}
+#pelaajan_testit h4
+{
+	text-align:center;
+	color:rgb(238, 136, 28);
+	height:5%;
+	margin:1% 0% 0% 0%;
+	font-weight:800;
+	font-size:20px;
+}
+
+#pelaajan_testit_tulokset ul li{padding: 3% 0% 0% 0%;}
+#pelaajan_testit_tulokset tr td:first-child{color:rgb(231, 138, 69);}
+#pelaajan_testit_tulokset{background-color:rgb(223, 223, 223);}
+#pelaajan_testit_tulokset{float:right; width:74%; margin-top:0%;}
+
+/* Suoritukset */
+#pelaajan_testit_tulokset table{width:100%;}
+.pelaaja_suoritukset{display:none;}
+
+
+/* *********** */
+
+#pelaajan_testit_ikaryhmat ul li:hover{background-color:rgb(255, 189, 43);}
+#pelaajan_testit_ikaryhmat_footer{height:100%; background-color:rgb(223, 223, 223);}
+#pelaajan_testit_ikaryhmat,
+#pelaajan_testit_tulokset{height:100%;}
+#pelaajan_testit_ikaryhmat{float:left; width:25%}
+#pelaajan_testit_ikaryhmat ul li
+{
+	padding: 7px 7px 7px 7px;
+	background-color:rgb(223, 223, 223);
+	margin:7px 0px 7px 0px;
+}
+#pelaajan_testit_ikaryhmat ul li:first-child{margin-top:0;}
+#pelaajan_testit_ikaryhmat ul li.valittuPatteri{background-color:rgb(255, 189, 43);}
+/*
+ ********************
+ * = tietojenmuokkaus.php
+ ********************
+*/
+
+#tietojenmuokkaus
+{
+	width:50%;
+	height:40%;
+	margin:auto;
+	background-color:rgb(223, 223, 223);
+	border-radius:0px;
+}
+#tietojenmuokkaus div:first-child
+{
+	height:15%;
+	text-align:center;
+	color:rgb(238, 136, 28);
+	background-color:rgb(204, 204, 204);
+	border-radius:10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+#tietojenmuokkaus:nth-child(2)
+{
+	background-color:rgb(223,223,223);
+	border-radius:10px;
+}
+#tietojenmuokkaus h2{margin-top:2%; padding-top:2%;}
+#tietojenmuokkaus table{margin:auto; padding-top:2%; padding-right:5%;}
+#tietojenmuokkaus table input{width:125%; margin-left:1%;}
+#tietojenmuokkaus td{color:rgb(231, 138, 69);}
+
+/*
+ ********************
+ * = testipatteri.php
+ ********************
+*/
+
+.testipatteri_koko
+{
+	width:75%; 
+	float:right; 
+	margin-right:-1.5%;
+}
+
+.testipatterin_tiedot
+{
+	border:0px 0px 5px 0px rgb(223, 223, 223);
+	border-top: none;
+	border-radius:10px;
+	height:80%;
+	width:98%;
+	background-color:rgb(223, 223, 223);
+}
+.testipatterin_tiedot p
+{
+	display:inline; padding:0% 0% 0% 2%;
+}
+.testipatterin_tiedot h4
+{
+	color:rgb(238, 136, 28);
+	height:5%;
+	padding:1% 0% 0% 0%;
+	text-align:center;
+	margin-top:2%;
+	margin-bottom:0;
+	background-color:rgb(204, 204, 204); 
+	border-top:5px solid rgb(204, 204, 204);
+	border-radius:10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size:20px;
+}
+.tallennaTulokset
+{
+	background : url("../Palat/tallennaMuutokset.jpg") no-repeat center center; 
+	width: 132px; 
+	height:41px; 
+	margin-left:1%; 
+	float:left;
+}
+
+/*
+ ********************
+ * = uusipatteri.php
+ ********************
+*/
+
+.uusipatteri{width:100%; max-width:1282; text-align:center;}
+
+
+.uusipatteri_taso h3
+{
+	color:rgb(238, 136, 28);
+	height:22px;
+	margin-top:1%;
+	margin-bottom:1%;
+	background-color:rgb(204, 204, 204); 
+	border-radius:10px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	font-size:20px;
+}
+
+.uusipatteri_taso
+{
+	color:rgb(238,136,28);
+	border-radius:10px;
+	height:15%;
+	max-height:30%;
+	width:100%;
+	background-color:rgb(223, 223, 223);
+}
+
+.uusipatteri_taso_testit
+{
+	color:rgb(238,136,28);
+	border-radius:10px;
+	height:50%;
+	width:100%;
+	background-color:rgb(223, 223, 223);
+}
+
+.uusipatteri_taso label{margin-left:1%; text-align:left; float:left;}
+.uusipatteri_taso_testit table{margin-left:1%; text-align:left;}
+.uusipatteri input[type="text"]{margin-left:1%; float:left;}
+
+/*
+ ********************
+ * = PAINIKKEET
+ ********************
+*/
+
+
+.uusipatteri input[type="submit"],
+.muokkaaTietoja,
+.poistaPelaaja,
+.poistaKayttaja,
+.tallennaTiedot{
+	border: none;
+	color: transparent;
+	font-size: 0;
+}
+.tMdiv{text-align:center; margin-top:3%;}
+
+.uusipatteri .poista{background: url("../Palat/poista.jpg") no-repeat center center; width: 106px; height:22px;}
+.uusipatteri .muokkaa{margin-right:1%; float:right; background : url("../Palat/muokkaa.jpg") no-repeat center center; width: 106px; height:41px;}
+.uusipatteri .tallennaMuutokset{background : url("../Palat/tallennaMuutokset.jpg") no-repeat center center; width: 132px; height:41px; margin-right:1%; float:right;}
+.uusipatteri .tallennaPatteri{background : url("../Palat/tallennaPatteri.jpg") no-repeat center center; width: 132px; height:41px; margin-right:1%; float:right;}
+.uusipatteri .poistaPatteri{background : url("../Palat/poistaPatteri.jpg") no-repeat center center; width: 106px; height:41px;}
+.muokkaaTietoja{background: url("../Palat/muokkaaTietoja.jpg") no-repeat center center; width: 122px; height:49px;}
+.tallennaTiedot{float:left; margin:5% 0% 0% 5%; background: url("../Palat/tallennaTiedot.jpg") no-repeat center center; width: 122px; height:49px;}
+.poistaPelaaja{float:right; margin:5% 5% 0% 0%; background: url("../Palat/peruuta.jpg") no-repeat center center; width: 123px; height:48px;}
+.poistaKayttaja{float:right; margin:5% 5% 0% 0%; background: url("../Palat/poista.jpg") no-repeat center center; width: 123px; height:48px;}
+
+.uusipatteri .temp{background : url("../temp.jpg") no-repeat center center; width: 106px; height:41px;}
+
+.poistaTesti{margin:0% 0% 1% 1%; width: 123px; height:48px;}
+.lisaaTesti{margin:0% 0% 1% 1%; width: 123px; height:48px;}
+.uusipatteri .peruuta{margin-right:1%; float:right; background : url("../Palat/peruuta.jpg") no-repeat center center; width: 106px; height:41px;}
